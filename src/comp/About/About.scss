@@ -1,0 +1,21 @@
+// Primary
+$bg-red: rgba(227, 39, 40, 1);
+$bg-green: rgba(97, 168, 56, 1);
+$bg-blue: rgba(67, 143, 208, 1);
+$bg-yellow: rgba(252, 170, 53, 1);
+$bg-black: rgba(75, 75, 75, 1);
+
+$bg-red-light: rgba(227, 39, 40, 0.75);
+$bg-red-light-nottrans: rgba(234, 97, 97, 1);
+$bg-green-light: rgba(97, 168, 56, 0.5);
+$bg-blue-light: rgba(67, 143, 208, 0.5);
+$bg-yellow-light: rgba(252, 170, 53, 0.5);
+$bg-black-light: rgba(75, 75, 75, 0.5);
+
+.about {
+  h1 {
+    margin-top: 250px;
+    font-size: 32px;
+    padding-left: 10px;
+  }
+}

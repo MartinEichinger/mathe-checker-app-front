@@ -1,0 +1,173 @@
+// Primary
+$bg-red: rgba(227, 39, 40, 1);
+$bg-green: rgba(97, 168, 56, 1);
+$bg-blue: rgba(67, 143, 208, 1);
+$bg-yellow: rgba(252, 170, 53, 1);
+$bg-black: rgba(75, 75, 75, 1);
+
+$bg-red-light: rgba(227, 39, 40, 0.75);
+$bg-green-light: rgba(97, 168, 56, 0.5);
+$bg-blue-light: rgba(67, 143, 208, 0.5);
+$bg-yellow-light: rgba(252, 170, 53, 0.5);
+$bg-black-light: rgba(75, 75, 75, 0.5);
+
+
+.isInvis {
+  visibility: hidden;
+}
+
+.calcAreaRational {
+  width: 100%;
+  margin-top: 50px;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  .blockCalc {
+    //flex-basis: 1;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 210px;
+    .item1, .item2, .item3 {
+      font-family: 'Indie Flower', cursive;
+
+      height: 40px;
+      padding: 20px 20px 20px 0px;
+      text-align: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .item2_1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      input {
+        font-family: 'Indie Flower', cursive;
+        font-size: 24px;
+        text-align: center;
+        border: 0px;
+        border-bottom: 1px solid $bg-black;
+      }
+      .col-1 {
+        width: 140px;
+        text-align: left;
+        padding-left: 5px;
+        margin: 0;
+      }
+      .col-2 {
+        font-size: 24px;
+        width: 50px;
+        text-align: center;
+        padding-left: 5px;
+        margin: 0;
+      }
+      .col-3 {
+        font-size: 24px;
+        width: 30px;
+        margin: 0px 0px 0px 10px;
+        text-align: center;
+        padding-left: 5px;
+      }
+      .col-4 {
+        font-size: 24px;
+        width: 50px;
+        margin: 0px 0px 0px 10px;
+        text-align: center;
+        padding-left: 5px;
+      }
+      .col-5 {
+        font-size: 24px;
+        width: 30px;
+        margin: 0px 0px 0px 10px;
+        text-align: center;
+        padding-left: 5px;
+      }
+      .goButton {
+        font-family: 'Indie Flower', cursive;
+        font-size: 24px;
+        height: 24px;
+        margin: 0;
+      }
+
+
+
+      .goButton {
+        margin-left: 15px;
+      }
+    }
+  }
+  .isSolved {
+    animation: high-speed .3s ease-out 0s ;
+  }
+  .keyboard {
+    &.inactive {
+      visibility: hidden;
+    }
+    &.active {
+      visibility: visible;
+    }
+  }
+
+  @keyframes high-speed {
+    0% {margin-left: 0px; width: 210px;}
+    50% {opacity: 0;}
+    100% {margin-left: 1500px; width: 210px;}
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .ratioBody {
+    .divRational {
+      .cheerRbooh {
+        height: 30vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ratioBody {
+    .divRational {
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .blockCalc {
+        width: 80%;
+      }
+      .cheerRbooh {
+        min-height: 28vw;
+      }
+      .listCalc {
+        width: 80%;
+        margin-bottom: 15px;
+      }
+      .listNotCalc {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .calcAreaRational {
+    .keyboard {
+      visibility: visible;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+  .calcAreaRational {
+    .keyboard {
+      visibility: visible;
+    }
+  }
+}

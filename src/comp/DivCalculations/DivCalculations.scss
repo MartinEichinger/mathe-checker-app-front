@@ -1,0 +1,218 @@
+// Primary
+$bg-green-dark: rgba(87, 142, 55, 1);
+$bg-blue-dark: rgba(62, 114, 158, 1);
+
+$bg-red: rgba(227, 39, 40, 1);
+$bg-green: rgba(97, 168, 56, 1);
+$bg-blue: rgba(67, 143, 208, 1);
+$bg-yellow: rgba(252, 170, 53, 1);
+$bg-black: rgba(75, 75, 75, 1);
+$bg-grey: rgba(161,161,161,1);
+
+$bg-red-light: rgba(227, 39, 40, 0.75);
+$bg-green-light: rgba(182, 237, 151, 1);
+$bg-blue-light: rgba(170, 215, 253, 1);
+$bg-yellow-light: rgba(252, 170, 53, 0.5);
+$bg-black-light: rgba(75, 75, 75, 0.5);
+
+
+.divCalculationsHead {
+  margin-top: 20px;
+  //display: flex;
+  //flex-flow: row nowrap;
+  //justify-content: space-around;
+  //align-items: stretch;
+  .isInvis {
+    visibility: hidden;
+  }
+  .divCalculations {
+    max-width: 1200px;
+    max-height: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    font-family: 'Indie Flower', cursive;
+    .progressBlock {
+      //border: 1px solid orange;
+      width: 15%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      //margin-bottom: 150px;
+      .yellow {
+        background-color: $bg-yellow;
+      }
+      .grey {
+        background-color: $bg-grey;
+      }
+      .bean {
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        margin: 0px;
+      }
+      .bigBean {
+        font-weight: bold;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        margin: 0px;
+      }
+    }
+    .calculationBlock {
+      //border: 1px solid orange;
+      width: 50%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .cheerRbooh {
+        //flex-basis: 1;
+        margin: 20px;
+        //max-height: 150px;
+        width: 25vw;
+        height: 25vw;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 100%;
+        //background-color: grey;
+        background-image: url('./think.gif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 1px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .resultBlock {
+      //border: 1px solid orange;
+      margin-right: 20px;
+      //margin-top: 50px;
+      width: 35%;
+      font-family: 'Indie Flower', cursive;
+      font-size: 24px;
+      .listCalc {
+        min-height: 60px;
+        background-color: $bg-green;
+        border-radius: 5px 5px 0px 0px;
+        padding-bottom: 20px;
+        .listCalcHeader {
+          position: relative;
+          top: 20px;
+          background-color: $bg-green-light;
+        }
+        .listCalcBody {
+          margin-top: 30px;
+          max-height: calc( 30vw - 60px);
+          overflow-y: scroll;
+          p {
+            min-width: 110px;
+            margin: 0;
+          }
+        }
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+          background: $bg-green-light;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: $bg-green-dark;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      }
+      .listNotCalc {
+        //margin-top: 20px;
+        min-height: 60px;
+        background-color: $bg-blue;
+        border-radius: 0px 0px 5px 5px;
+        padding-bottom: 20px;
+        .listNotCalcHeader {
+          position: relative;
+          top: 20px;
+          background-color: $bg-blue-light;
+        }
+        .listNotCalcBody {
+          margin-top: 30px;
+          max-height: calc( 30vw - 60px);
+          overflow-y: scroll;
+          p {
+            min-width: 110px;
+            margin: 0;
+          }
+        }
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+          background: $bg-blue-light;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: $bg-blue-dark;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      }
+    }
+    .isSolved {
+      animation: high-speed .3s ease-out 0s ;
+    }
+
+    @keyframes high-speed {
+      0% {margin-left: 0px; width: 210px;}
+      50% {opacity: 0;}
+      100% {margin-left: 1500px; width: 210px;}
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .divCalculationsHead {
+    .divCalculations {
+      .cheerRbooh {
+        height: 30vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .divCalculationsHead {
+    .divCalculations {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .progressBlock {
+        border: 1px solid orange;
+        width: 90%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        //margin-bottom: 150px;
+      }
+      .calculationBlock {
+        width: 90%;
+      }
+      .resultBlock {
+        width: 90%;
+        margin-bottom: 85px;
+        margin-right: 0px;
+      }
+    }
+  }
+}

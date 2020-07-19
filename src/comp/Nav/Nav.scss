@@ -1,0 +1,139 @@
+// Primary
+$bg-red: rgba(227, 39, 40, 1);
+$bg-green: rgba(97, 168, 56, 1);
+$bg-blue: rgba(67, 143, 208, 1);
+$bg-yellow: rgba(252, 170, 53, 1);
+$bg-black: rgba(5, 5, 5, 1);
+
+$bg-red-light: rgba(227, 39, 40, 0.75);
+$bg-red-light-nottrans: rgba(234, 97, 97, 1);
+$bg-green-light: rgba(97, 168, 56, 0.5);
+$bg-blue-light: rgba(67, 143, 208, 0.5);
+$bg-yellow-light: rgba(252, 170, 53, 0.5);
+$bg-black-light: rgba(75, 75, 75, 0.5);
+
+.navbar {
+  background-color: $bg-red;
+  font-family: "Indie Flower", cursive;
+  img {
+    background-color: $bg-red-light-nottrans;
+  }
+  .MuiFormGroup-root {
+    margin: 0px 0px 8px 0px;
+    width: 100px;
+
+    .MuiSwitch-thumb {
+      width: 16px;
+      height: 16px;
+    }
+    .MuiSwitch-root {
+      height: 34px;
+      width: 50px;
+    }
+    .MuiFormControlLabel-label {
+      font-size: 16px;
+      color: $bg-black;
+    }
+    .MuiFormControlLabel-root {
+      text-align: right;
+      margin: 0px;
+    }
+  }
+}
+
+// .headerBody {
+//   position: fixed;
+//   z-index: 1;
+//   top: 0px;
+//   left: 0px;
+//   width: calc(100% - 40px);
+//   background-color: $bg-red;
+//   padding-left: 20px;
+//   padding-right: 20px;
+
+//   .header {
+//     font-family: "Indie Flower", cursive;
+
+//     max-width: 1200px;
+//     margin: 0 auto;
+
+//     display: flex;
+//     flex-flow: row nowrap;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//     .navigationLogo {
+//       display: flex;
+//       flex-flow: row nowrap;
+//       justify-content: flex-start;
+//       align-items: center;
+//       img {
+//         display: flex;
+//         width: 50px;
+//         height: 100%;
+//         background-color: $bg-red-light-nottrans;
+//         border-radius: 5px;
+//       }
+//       h1 {
+//         font-size: 32px;
+//         padding-top: 5px;
+//         padding-left: 10px;
+//         color: $bg-black;
+//       }
+//     }
+//     .navigation {
+//       display: flex;
+//       flex-flow: column-reverse nowrap;
+//       justify-content: flex-end;
+//       align-items: flex-end;
+//       width: 50%;
+//       .nav-1 {
+//         width: 100%;
+//         font-size: 24px;
+//         display: flex;
+//         flex-flow: row nowrap;
+//         justify-content: space-between;
+//         align-items: center;
+//         a {
+//           color: $bg-black;
+//           text-decoration: none;
+//           &:hover {
+//             color: white;
+//           }
+//         }
+//       }
+//       .nav-2 {
+//         margin-right: -15px;
+//         .MuiSwitch-thumb {
+//           width: 16px;
+//           height: 16px;
+//         }
+//         .MuiSwitch-root {
+//           height: 34px;
+//           width: 50px;
+//         }
+//         .MuiFormControlLabel-label {
+//           font-size: 16px;
+//           color: $bg-black;
+//         }
+//         .MuiFormGroup-root {
+//           margin: 0px 0px 0px 0px;
+//           width: 100px;
+//         }
+//         .MuiFormControlLabel-root {
+//           text-align: right;
+//           margin: 0px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .header {
+//   }
+// }
+
+// @media screen and (max-width: 500px) {
+//   .header {
+//   }
+// }

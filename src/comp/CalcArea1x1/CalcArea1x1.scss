@@ -1,0 +1,85 @@
+// Primary
+$bg-red: rgba(227, 39, 40, 1);
+$bg-green: rgba(97, 168, 56, 1);
+$bg-blue: rgba(67, 143, 208, 1);
+$bg-yellow: rgba(252, 170, 53, 1);
+$bg-black: rgba(75, 75, 75, 1);
+
+$bg-red-light: rgba(227, 39, 40, 0.75);
+$bg-red-light-nottrans: rgba(234, 97, 97, 1);
+$bg-green-light: rgba(97, 168, 56, 0.5);
+$bg-blue-light: rgba(67, 143, 208, 0.5);
+$bg-yellow-light: rgba(252, 170, 53, 0.5);
+$bg-black-light: rgba(75, 75, 75, 0.5);
+
+.divArea1x1 {
+  .calcBlock {
+    width: 100%;
+    //margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 210px;
+    .item1,
+    .item2,
+    .item3 {
+      font-family: "Indie Flower", cursive;
+      height: 20px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      p {
+        margin-left: 15px;
+      }
+
+      .calcStr,
+      .calcInput,
+      .goButton {
+        font-family: "Indie Flower", cursive;
+        font-size: 24px;
+        height: 24px;
+      }
+
+      .calcInput {
+        margin-left: 10px;
+        width: 40px;
+        text-align: center;
+        border: 0px;
+        border-bottom: 1px solid $bg-black;
+      }
+
+      .goButton {
+        margin: 15px;
+        padding: 0px;
+        height: 16px;
+        width: 16px;
+        border: 3px solid $bg-green;
+        border-radius: 3px;
+        background-color: white;
+        color: $bg-green;
+        cursor: pointer;
+        &:hover {
+          background-color: $bg-blue-light;
+        }
+        .MuiSvgIcon-root {
+          position: absolute;
+          margin: -7px 0px 0px -12px;
+          padding: 0px;
+        }
+      }
+    }
+  }
+  .keyboard {
+    &.inactive {
+      visibility: hidden;
+    }
+    &.active {
+      visibility: visible;
+    }
+  }
+}
