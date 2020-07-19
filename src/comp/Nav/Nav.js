@@ -35,14 +35,8 @@ export function Nav({ onChange }) {
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <div className="navbar-nav mr-auto">
-          <NavLink to="/" className="nav-item nav-link h4 mr-3">
-            Home
-          </NavLink>
           <NavLink to="/calc" className="nav-item nav-link h4 mr-3">
             Rechnen
-          </NavLink>
-          <NavLink to="/about" className="nav-item nav-link h4 mr-3">
-            Über
           </NavLink>
           <NavLink to="/login" className="nav-item nav-link h4 mr-3">
             Login

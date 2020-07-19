@@ -40,7 +40,6 @@ class App extends React.Component {
         <main className="container">
           <div className="content">
             <Switch>
-              <Route path="/about" component={About} />
               <Route
                 path="/calc"
                 render={(props) => (
@@ -51,7 +50,6 @@ class App extends React.Component {
                   />
                 )}
               />
-              <Route path="/calc" component={Calc} />
               <Route path="/login" component={Login} />
               <Route path="/not-found" component={NotFound} />
               <Route path="/" exact component={Home} />
