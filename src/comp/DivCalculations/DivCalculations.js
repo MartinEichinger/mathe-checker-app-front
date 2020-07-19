@@ -298,6 +298,8 @@ export class DivCalculations extends React.Component {
   };
 
   render() {
+    const { debugLevel } = this.state;
+    if (debugLevel >= 2) console.log("start render DivCalculation", this.props);
     return (
       <div className="divCalculationsHead">
         <div className="divCalculations">

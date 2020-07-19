@@ -219,7 +219,7 @@ class Calc extends React.Component {
             propsCheckbox={this.propsCheckbox}
             propsSelect={this.propsSelect}
             appState={this.state}
-            keyboardState={this.state.keyboardActive}
+            keyboardState={this.props.keyboardActive}
             userData={userData}
           />
         );
@@ -230,7 +230,8 @@ class Calc extends React.Component {
   };
 
   render() {
-    if (this.state.debugLevel >= 2) console.log("Calc: start rendering...");
+    if (this.state.debugLevel >= 2)
+      console.log("Calc: start rendering...", this.props);
 
     return (
       <div className="Calc">
